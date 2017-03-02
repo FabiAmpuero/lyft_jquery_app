@@ -5,60 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>App</title>
-    <link rel="icon" type="image/ico" href="image/favicon.png">
+    <link rel="icon" type="image/ico" href="image/bigote.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app2.css">
 </head>
 <body onload="init()">
     <!-- ------------------------------------------------------------------ MAPA -->
     <div id="map"></div>
     
-    <!-- ------------------------------------------------------ LISTA DE CARROS -->
+    <!-- ---------------------------------------------------------- SEGUNDA VISTA -->
     <div class="container">
-    <ul id="list-cars">
-       
-        <li>
-            <div class="row">
-                <div class="col-xs-6">
-                    <img src="image/sedan-image.png" alt="" >
+        <ul id="list-cars-dos">
+            <li>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <img src="image/car-sedan.png" alt="" >
+                    </div>
+                    <div class="col-xs-7">
+                        <p id="name-car">Lyft <br><small>Fast ride, 4 seats</small></p>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <p id="name-car">Lyft <br><small>Fast ride, 4 seats</small></p>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-xs-6 text-center">
+                        <img src="image/master-card.png" alt="" > Personal <br><small>Payment</small>
+                    </div>
+                    <div class="col-xs-6">
+                        <p id="name-car" class="text-center">$6-12 <br><small>Price estimate</small></p>
+                    </div>
                 </div>
-            </div>
-        </li>
-        
-        <li>
-            <div class="row">
-                <div class="col-xs-6">
-                    <img src="image/sedan-image.png" alt="" >
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <i class="glyphicon glyphicon-heart" style="color:#ff00bf;"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p id="name-car">2300 Harrison St</p>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <p id="name-car">Lyft <br><small>4 seats</small></p>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <i class="glyphicon glyphicon-heart" style="color:#3c0980;"></i>
+                    </div>
+                    <div class="col-xs-10">
+                        <p id="name-car">Caltrain Station</p>
+                    </div>
                 </div>
-            </div>
-        </li>
-        <li>
-            <div class="row">
-                <div class="col-xs-2">
-                    <img src="image/sedan-image.png" alt="" >
-                </div>
-                <div class="col-xs-10">
-                    <p id="name-car">Plus <br><small>6 seats</small></p>
-                </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
     </div>
-    <!-- ------------------------------------------------------ POSICIÓN ACTUAL -->
-    <div class="location" id="div-location">
-        <i class="glyphicon glyphicon-circle-arrow-down col-xs-3" id="icon-up"></i>
-        <p class="col-xs-9">2300 Harrison St <br><small>Pickup location</small></p>
-        
-    </div>
-    <!-- --------------------------------------------------- BOTON DE SELECCION -->
-    <a class="btn-set" id="boton">Set pickup</a>
-    <a class="btn-request" id="boton-request" style="display: none;">Request Lyft</a>
+    <!-- ---------------------------------------------------- BOTON DE SELECCION -->
+    <a class="btn-request" id="boton-request">Request Lyft</a>
+    
     <!-- ---------------------------------------------------------------- SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/app.js"></script>

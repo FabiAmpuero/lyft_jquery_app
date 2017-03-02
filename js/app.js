@@ -10,6 +10,9 @@ function init() {
     $("#boton-request").css("width",widthBotton - 10);
     $("#boton-request").css("margin-left","5px");
     
+    $("#list-cars-dos").css("width",widthBotton - 10);
+    $("#list-cars-dos").css("margin-left","5px");
+    
     initMap();
     $('#icon-up').click(iconClick);
     $("#boton").click(setPickup);
@@ -24,6 +27,7 @@ function setPickup() {
     $("#boton").hide();
     $("#list-cars").hide();
     $("#boton-request").show();
+    $("#list-cars-dos").show();
 }
 
 var miMapa;

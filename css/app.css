@@ -1,6 +1,9 @@
 *{
     /*overflow: hidden;*/
 }
+#name-car{
+    margin: 0;
+}
 #list-cars {
     list-style: none;
     background: #fff;
@@ -14,14 +17,14 @@
     border-radius: 10px;
     display: block;
 }
-li:hover {
+#list-cars li:hover {
     background: #c4c4c4;
 }
-li *{
+#list-cars li *{
     display: inline-block;
 }
-ul li {
-    padding: 10px 10px 0 10px;
+#list-cars li {
+    padding: 5px 10px 0 10px;
     line-height: 14px;
 }
 .left {
@@ -84,3 +87,50 @@ ul li {
     font-size: 30px;
     color: #888888;
 }
+
+
+/* ---------------------------------- segunda vista */
+*{
+    /*overflow: hidden;*/
+}
+#list-cars-dos {
+    list-style: none;
+    background: #fff;
+    position: absolute;
+    margin: 0;
+    bottom: 58px;
+    margin-left: 5px;
+   /* padding: 10px 10px 0 10px;*/
+    padding: 0;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+#list-cars-dos li *{
+    display: inline-block;
+}
+#list-cars-dos li {
+    padding: 10px 10px 0 10px;
+    line-height: 14px;
+}
+#list-cars-dos li:first-child {
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+}
+#list-cars-dos li:nth-child(2) {
+    padding-top: 0;
+    border-bottom: 1px solid #ccc;
+}
+#list-cars-dos li:nth-child(2) .row div:first-child {
+    border-right: 1px solid #ccc;
+}
+#list-cars-dos li:nth-child(2), #list-cars-dos li:first-child {
+    background: #e6e6e6;
+}
+#list-cars-dos li:nth-child(3) {
+    padding-right: 0;
+}#list-cars-dosl li:nth-child(3) .row div:nth-child(2) {
+    border-bottom: 1px solid #ccc;
+}
+
