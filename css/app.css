@@ -1,0 +1,86 @@
+*{
+    /*overflow: hidden;*/
+}
+#list-cars {
+    list-style: none;
+    background: #fff;
+    width: 70%;
+    position: absolute;
+    margin: 0;
+    bottom: 116px;
+    margin-left: 5px;
+   /* padding: 10px 10px 0 10px;*/
+    padding: 0;
+    border-radius: 10px;
+    display: block;
+}
+li:hover {
+    background: #c4c4c4;
+}
+li *{
+    display: inline-block;
+}
+ul li {
+    padding: 10px 10px 0 10px;
+    line-height: 14px;
+}
+.left {
+    padding-left: 0;
+}
+.right {
+    
+}
+.right p {
+    text-align: center;
+}
+.row{
+    width: 100%;
+    margin: 0;
+}
+.btn-set {
+    background: rgb(60,9,128);
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn-request {
+    background: rgb(255,0,191);
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.container {
+    padding-left: 0;
+}
+.location {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    bottom: 58px;
+    font-size: 20px;
+    border-radius: 5px;
+    line-height: 15px;
+}
+.location p {
+    margin: 0;
+    display: inline-block;
+    font-size: 17px;
+}
+.location small {
+    font-size: 12px;
+}
+.location i {
+    font-size: 30px;
+    color: #888888;
+}
