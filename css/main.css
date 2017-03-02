@@ -1,0 +1,50 @@
+body {
+    background: url("../image/fondo.jpg") center center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+header img {
+    width:30%;
+}
+header .header {
+    padding-top: 10%;
+    height:150px ;
+    background: -webkit-linear-gradient(black, rgba(255, 255, 0, 0));
+    background: -o-linear-gradient(black, rgba(255, 255, 0, 0));
+    background: -moz-linear-gradient(black, rgba(255, 255, 0, 0)); 
+    background: linear-gradient(black, rgba(255, 255, 0, 0)); 
+}
+section {
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+.btn {
+    font-size: 20px;
+    width:100%;
+    padding: 10% 10%;
+}
+.transparente{
+    background: rgba(255, 0, 0, 0);
+    color: #fff;
+    border-width: 2px;
+    border-color: #fff;
+}
+.transparente:hover{
+    background: none;
+    color: #fff;
+    border-color: #fff;
+}
+.derechin {
+    border-color: rgba(255, 0, 0, 0);   
+    background: -webkit-linear-gradient(left, #b511e6 , #ff00eb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #b511e6, #ff00eb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #b511e6, #ff00eb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #b511e6 , #ff00eb); /* Standard syntax (must be last) */
+}
+.derechin:hover{
+    border-color: rgba(255, 0, 0, 0);
+}
