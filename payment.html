@@ -4,17 +4,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App</title>
-    <link rel="icon" type="image/ico" href="image/favicon.png">
+    <title>Payment</title>
+    <link rel="icon" type="image/ico" href="image/bigote.png">
+    <link rel="stylesheet" href="icon/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/payment.css">
 </head>
 <body onload="init()">
-    <!-- ------------------------------------------------------------------ MAPA -->
-    
+    <!-- ------------------------------------------------------------------ TERCERA VISTA -->
+    <header>
+        <div class="container">
+            <div class="row">
+               <i class="icon-dots-three-vertical"></i>
+               <img src="image/logo_lyft.png" alt="" width="40px">
+               <h3 class="text-center">Payment</h3>
+            </div>
+        </div>
+    </header>
+    <section class="perfil">
+        <div class="foto-perfil">
+            <img class="foto-perfil photo" src="image/perfil.jpg" alt="">
+        </div>
+    </section>
+    <section class="pay">
+           <div class="tip">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <p>No tip</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p>$1</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p>$2</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p>$5</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p>Other</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payment">
+           <div class="payment-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p>No tip</p>
+                    </div>
+                    <div class="col-xs-7">
+                        <p>$1</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <p>$2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ---------------------------------------------------------------- SCRIPT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/payment.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1OTUCWFO21snB64uTCKgsDmi3UlP5FCo&callback=initMap" async defer></script>
 </body>
 </html>

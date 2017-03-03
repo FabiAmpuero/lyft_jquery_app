@@ -16,7 +16,17 @@ function init() {
     initMap();
     $('#icon-up').click(iconClick);
     $("#boton").click(setPickup);
+    
+    /*
+    $("li").each(function(){
+        $(this).click(pickCar);
+    })*/
+    
+    $("#list-cars").on("click",".li",pickCar());
 }
+
+
+
 
 function iconClick() {
     $("#list-cars").toggle();
@@ -28,21 +38,17 @@ function setPickup() {
     $("#list-cars").hide();
     $("#boton-request").show();
     $("#list-cars-dos").show();
+    $("#boton-request").click(setRequest);
+}
+
+function setRequest() {
+    $(location).attr("href","payment.html");
 }
 
 var miMapa;
 function initMap() {
     
-    var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Laboratoria</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Laboratoria</b></p>'+
-      '</div>'+
-      '</div>';
-    
-    
+    var contentString = '<h1>Laboratoria</h1><br/><p><b>Laboratoria</b></p>';
     
     miMapa = new google.maps.Map(
         document.getElementById('map'), 
@@ -105,4 +111,3 @@ function initMap() {
       }
     }
 }
-

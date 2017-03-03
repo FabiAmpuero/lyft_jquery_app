@@ -1,3 +1,4 @@
+/*
 function init() {
     var heightWindow = $(window).height();
     $("#map").css("height",heightWindow);
@@ -14,4 +15,8 @@ function iconClick() {
 }
 
 function setPickup() {
+}
+*/
+function init() {
+    console.log("oli");
 }
