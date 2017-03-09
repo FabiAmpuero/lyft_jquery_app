@@ -22,10 +22,16 @@ function init() {
         $(this).click(pickCar);
     })*/
     
-    $("#list-cars").on("click",".li",pickCar());
+    $("#list-cars").on("click",".li",pickCar);
 }
 
-
+function pickCar(){
+    var guardar = $("#name-car");
+    var keep = this;
+    console.log(keep);
+    localStorage.setItem("namecar",this);
+    
+}
 
 
 function iconClick() {

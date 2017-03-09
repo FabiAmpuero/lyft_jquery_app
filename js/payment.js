@@ -1,22 +1,16 @@
-/*
-function init() {
-    var heightWindow = $(window).height();
-    $("#map").css("height",heightWindow);
-    var widthBotton = $(window).width();
-    $("#boton").css("width",widthBotton - 10);
-    $("#boton").css("margin-left","5px");
-    
-    initMap();
-    $("#boton-request").click(setPickup);
-}
-
-function iconClick() {
-    $("#list-cars").toggle();
-}
-
-function setPickup() {
-}
-*/
+$(document).ready(init);
 function init() {
     console.log("oli");
+    $.ajax(
+    {
+        url: "http://clientes.geekadvice.pe/api/carrera",
+        data:{tipo:2}
+    }).done(function(_data){
+        update(_data);
+    });
+};
+
+function update(_info){
+    $(".foto-perfil").attr("src",_info.conductor.url);
 }
+
